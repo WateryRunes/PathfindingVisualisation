@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cj2ooxm5le107"]
+
+[ext_resource type="Script" path="res://GO_InputPopup.cs" id="1_dfhbv"]
+
+[node name="InputPopup" type="Node2D"]
+script = ExtResource("1_dfhbv")
+
+[node name="PopupPanel" type="Panel" parent="."]
+z_index = 1
+offset_right = 165.0
+offset_bottom = 31.0
+
+[node name="InputLineEdit" type="LineEdit" parent="PopupPanel"]
+layout_mode = 0
+offset_right = 164.0
+offset_bottom = 31.0
+placeholder_text = "Enter weight here..."
+max_length = 4
+select_all_on_focus = true
+caret_blink = true
+
+[connection signal="text_submitted" from="PopupPanel/InputLineEdit" to="." method="_on_line_edit_text_submitted"]

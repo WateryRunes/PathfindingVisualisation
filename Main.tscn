@@ -1,0 +1,559 @@
+[gd_scene load_steps=17 format=3 uid="uid://bu2bp6u2x0275"]
+
+[ext_resource type="Script" path="res://GO_ErrorWindow.cs" id="1_awkni"]
+[ext_resource type="Script" path="res://AlgorithmButtons/GO_AStarButtonPress.cs" id="2_a37ql"]
+[ext_resource type="StyleBox" uid="uid://3kpeubiqsxro" path="res://Colours/Violet.tres" id="2_f0110"]
+[ext_resource type="Script" path="res://AlgorithmButtons/GO_DijkstraButtonPress.cs" id="3_2cjer"]
+[ext_resource type="Script" path="res://GO_FixedGraphToggle.cs" id="3_fob6c"]
+[ext_resource type="Script" path="res://AlgorithmButtons/GO_CAStarButtonPress.cs" id="4_nvi83"]
+[ext_resource type="StyleBox" uid="uid://dkbqbq3utnw88" path="res://Colours/CoolGrey11.tres" id="5_ghnc5"]
+[ext_resource type="Script" path="res://GO_Graph/GO_GraphPanel.cs" id="6_rcsb0"]
+[ext_resource type="Script" path="res://NavigationButtons/GO_PlayButtonPress.cs" id="7_p5mi3"]
+[ext_resource type="Script" path="res://NavigationButtons/GO_PauseButtonPress.cs" id="8_n83fc"]
+[ext_resource type="Script" path="res://NavigationButtons/GO_SkipStartButton.cs" id="9_nttap"]
+[ext_resource type="Script" path="res://NavigationButtons/GO_SkipBackButton.cs" id="10_s66ad"]
+[ext_resource type="Script" path="res://NavigationButtons/GO_SkipForwardButton.cs" id="11_3fboy"]
+[ext_resource type="Script" path="res://NavigationButtons/GO_SkipEndButton.cs" id="12_5skib"]
+[ext_resource type="Script" path="res://RandomGraphButton.cs" id="15_3c54t"]
+
+[sub_resource type="Theme" id="Theme_2p8ap"]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_disabled_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/colors/icon_disabled_color = Color(0, 0, 0, 1)
+Button/colors/icon_focus_color = Color(0, 0, 0, 1)
+Button/colors/icon_hover_color = Color(0, 0, 0, 1)
+Button/colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/icon_normal_color = Color(0, 0, 0, 1)
+Button/colors/icon_pressed_color = Color(0, 0, 0, 1)
+Button/constants/h_separation = 0
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 16
+Button/fonts/font = null
+Button/styles/disabled = null
+Button/styles/focus = null
+Button/styles/hover = null
+Button/styles/normal = null
+Button/styles/pressed = null
+
+[node name="Root" type="Node2D"]
+
+[node name="MainLayer" type="CanvasLayer" parent="."]
+
+[node name="AcceptDialog" type="AcceptDialog" parent="MainLayer"]
+title = "ERROR"
+initial_position = 1
+size = Vector2i(200, 100)
+unresizable = true
+always_on_top = true
+popup_window = true
+extend_to_title = true
+dialog_autowrap = true
+script = ExtResource("1_awkni")
+
+[node name="Algos+VBox" type="HBoxContainer" parent="MainLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_2p8ap")
+
+[node name="Algos Panel" type="Panel" parent="MainLayer/Algos+VBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = ExtResource("2_f0110")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainLayer/Algos+VBox/Algos Panel"]
+layout_mode = 2
+offset_right = 481.0
+offset_bottom = 136.0
+size_flags_horizontal = 3
+
+[node name="A* button" type="Button" parent="MainLayer/Algos+VBox/Algos Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+text = "A*"
+script = ExtResource("2_a37ql")
+
+[node name="Dijkstra button" type="Button" parent="MainLayer/Algos+VBox/Algos Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+text = "Dijkstra"
+script = ExtResource("3_2cjer")
+
+[node name="CA* button" type="Button" parent="MainLayer/Algos+VBox/Algos Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+text = "CA*"
+script = ExtResource("4_nvi83")
+
+[node name="WHCA* button" type="Button" parent="MainLayer/Algos+VBox/Algos Panel/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "WHCA*"
+
+[node name="LineEdit" type="LineEdit" parent="MainLayer/Algos+VBox/Algos Panel/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Graph+HBox" type="VBoxContainer" parent="MainLayer/Algos+VBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="GraphPanel" type="Panel" parent="MainLayer/Algos+VBox/Graph+HBox"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+mouse_filter = 1
+theme_override_styles/panel = ExtResource("5_ghnc5")
+script = ExtResource("6_rcsb0")
+
+[node name="Vars+Control" type="HBoxContainer" parent="MainLayer/Algos+VBox/Graph+HBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VarsPanel" type="Panel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+theme_override_styles/panel = ExtResource("2_f0110")
+
+[node name="A*Grid" type="GridContainer" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel"]
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 358.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+theme_override_constants/h_separation = 20
+columns = 2
+
+[node name="prioqueue" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]prioqueue:[/right]"
+
+[node name="prioqueueout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
+text = "[]"
+
+[node name="camefromdict" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]camefromdict:[/right]"
+
+[node name="camefromdictout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 4.0
+text = "[]"
+
+[node name="costdict" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]costdict: [/right]"
+
+[node name="costdictout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+layout_mode = 2
+size_flags_stretch_ratio = 4.0
+text = "[]"
+
+[node name="currentnode" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]currentnode: [/right]"
+
+[node name="currentnodeout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+layout_mode = 2
+text = "null"
+
+[node name="newcost" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]newcost: [/right]"
+
+[node name="newcostout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+layout_mode = 2
+text = "null"
+
+[node name="path" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]path: [/right]"
+
+[node name="pathout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/A*Grid"]
+layout_mode = 2
+text = "[]"
+
+[node name="DijkstraGrid" type="GridContainer" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel"]
+visible = false
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 358.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+theme_override_constants/h_separation = 20
+columns = 2
+
+[node name="unvisitednodes" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]unvisitednodes: [/right]"
+
+[node name="unvisitednodesout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
+text = "[]"
+
+[node name="previous" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]previous: [/right]"
+
+[node name="previousout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 4.0
+text = "[]"
+
+[node name="distance" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]distance: [/right]"
+
+[node name="distanceout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+layout_mode = 2
+size_flags_stretch_ratio = 4.0
+text = "[]"
+
+[node name="currentnode" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]currentnode: [/right]"
+
+[node name="currentnodeout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+layout_mode = 2
+text = "0"
+
+[node name="newcost" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]newcost: [/right]"
+
+[node name="newcostout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+layout_mode = 2
+text = "0"
+
+[node name="path" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]path: [/right]"
+
+[node name="pathout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/DijkstraGrid"]
+layout_mode = 2
+text = "[]"
+
+[node name="CA*Grid" type="GridContainer" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel"]
+visible = false
+layout_mode = 0
+offset_right = 1074.0
+offset_bottom = 358.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+theme_override_constants/h_separation = 20
+columns = 2
+
+[node name="firstagentpath" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]firstagentpath: [/right]"
+
+[node name="firstagentpathout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
+text = "[]"
+
+[node name="secondagentpath" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]secondagentpath: [/right]"
+
+[node name="secondagentpathout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 4.0
+text = "[]"
+
+[node name="collisionedge" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]collisionedge: [/right]"
+
+[node name="collisionedgeout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+layout_mode = 2
+size_flags_stretch_ratio = 4.0
+text = "null"
+
+[node name="newpath" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]newpath: [/right]"
+
+[node name="newpathout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+layout_mode = 2
+text = "[]"
+
+[node name="newpathshorter" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]newpathshorter: [/right]"
+
+[node name="newpathshorterout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+layout_mode = 2
+text = "null"
+
+[node name="timetowait" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[right]timetowait: [/right]"
+
+[node name="timetowaitout" type="RichTextLabel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/VarsPanel/CA*Grid"]
+layout_mode = 2
+text = "0"
+
+[node name="Play+Checks Panel" type="Panel" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = ExtResource("2_f0110")
+
+[node name="Play+Checks" type="VBoxContainer" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel"]
+layout_mode = 2
+offset_left = 4.0
+offset_right = 362.0
+offset_bottom = 359.0
+size_flags_horizontal = 3
+
+[node name="GridContainer" type="GridContainer" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks"]
+layout_mode = 2
+size_flags_horizontal = 4
+columns = 4
+
+[node name="Space" type="Control" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+text = "Play"
+script = ExtResource("7_p5mi3")
+
+[node name="Pause" type="Button" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+toggle_mode = true
+text = "Pause"
+script = ExtResource("8_n83fc")
+
+[node name="Space2" type="Control" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer"]
+layout_mode = 2
+
+[node name="Start" type="Button" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+text = "<<"
+script = ExtResource("9_nttap")
+
+[node name="Back" type="Button" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+text = "<"
+script = ExtResource("10_s66ad")
+
+[node name="Forward" type="Button" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+text = ">"
+script = ExtResource("11_3fboy")
+
+[node name="End" type="Button" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+text = ">>"
+script = ExtResource("12_5skib")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks"]
+layout_mode = 2
+
+[node name="FixedGraphToggle" type="CheckButton" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+text = "Default Graph"
+script = ExtResource("3_fob6c")
+
+[node name="Button" type="Button" parent="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_disabled_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 1)
+text = "Generate Random Graph"
+script = ExtResource("15_3c54t")
+
+[connection signal="pressed" from="MainLayer/Algos+VBox/Algos Panel/VBoxContainer/A* button" to="MainLayer/Algos+VBox/Algos Panel/VBoxContainer/A* button" method="_on_pressed"]
+[connection signal="pressed" from="MainLayer/Algos+VBox/Algos Panel/VBoxContainer/Dijkstra button" to="MainLayer/Algos+VBox/Algos Panel/VBoxContainer/Dijkstra button" method="_on_pressed"]
+[connection signal="pressed" from="MainLayer/Algos+VBox/Algos Panel/VBoxContainer/CA* button" to="MainLayer/Algos+VBox/Algos Panel/VBoxContainer/CA* button" method="_on_pressed"]
+[connection signal="gui_input" from="MainLayer/Algos+VBox/Graph+HBox/GraphPanel" to="MainLayer/Algos+VBox/Graph+HBox/GraphPanel" method="_on_gui_input" binds= [false, false]]
+[connection signal="pressed" from="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/Play" to="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/Play" method="_on_pressed"]
+[connection signal="toggled" from="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/Pause" to="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/Pause" method="_on_toggled"]
+[connection signal="pressed" from="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/Start" to="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/Start" method="_on_pressed"]
+[connection signal="pressed" from="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/Back" to="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/Back" method="_on_pressed"]
+[connection signal="pressed" from="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/Forward" to="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/Forward" method="_on_pressed"]
+[connection signal="pressed" from="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/End" to="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/GridContainer/End" method="_on_pressed"]
+[connection signal="toggled" from="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/VBoxContainer/FixedGraphToggle" to="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/VBoxContainer/FixedGraphToggle" method="_on_toggled"]
+[connection signal="pressed" from="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/VBoxContainer/Button" to="MainLayer/Algos+VBox/Graph+HBox/Vars+Control/Play+Checks Panel/Play+Checks/VBoxContainer/Button" method="_on_pressed"]

@@ -1,0 +1,251 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\graph\\graph_usergraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:graph\\graph_usergraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\graph\\graph_graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:graph\\graph_graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\graphcolour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:graphcolour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\graph\\graph_fixedgraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:graph\\graph_fixedgraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\go_graph\\go_graphedge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:go_graph\\go_graphedge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\go_graph\\go_graphnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:go_graph\\go_graphnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\graph\\graph_node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:graph\\graph_node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\visualisationstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:visualisationstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\go_graph\\go_graphpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:go_graph\\go_graphpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\graph\\graph_edge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:graph\\graph_edge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\go_inputpopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:go_inputpopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\go_graph\\go_graphcontextmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:go_graph\\go_graphcontextmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|c:\\users\\thomas wopling\\desktop\\laptop share - onedrive\\onedrive\\desktop\\ce301\\23-24_ce301_wopling_thomas\\godot proj\\go_graph\\go_tokenvisualiser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B43DB060-3334-416C-A48E-7216ACD9E916}|CE301.csproj|solutionrelative:go_graph\\go_tokenvisualiser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Manager.cs",
+              "RelativeDocumentMoniker": "Manager.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Manager.cs",
+              "RelativeToolTip": "Manager.cs",
+              "ViewState": "AQIAAM8EAAAAAAAAAADgv+EEAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T15:25:50.981Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GraphColour.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GraphColour.cs",
+              "RelativeDocumentMoniker": "GraphColour.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GraphColour.cs",
+              "RelativeToolTip": "GraphColour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T13:49:51.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GO_InputPopup.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_InputPopup.cs",
+              "RelativeDocumentMoniker": "GO_InputPopup.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_InputPopup.cs",
+              "RelativeToolTip": "GO_InputPopup.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAA9wDYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T10:39:02.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Graph_FixedGraph.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Graph\\Graph_FixedGraph.cs",
+              "RelativeDocumentMoniker": "Graph\\Graph_FixedGraph.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Graph\\Graph_FixedGraph.cs",
+              "RelativeToolTip": "Graph\\Graph_FixedGraph.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T19:41:11.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GO_TokenVisualiser.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_Graph\\GO_TokenVisualiser.cs",
+              "RelativeDocumentMoniker": "GO_Graph\\GO_TokenVisualiser.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_Graph\\GO_TokenVisualiser.cs",
+              "RelativeToolTip": "GO_Graph\\GO_TokenVisualiser.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAowCAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T20:04:04.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GO_GraphPanel.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_Graph\\GO_GraphPanel.cs",
+              "RelativeDocumentMoniker": "GO_Graph\\GO_GraphPanel.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_Graph\\GO_GraphPanel.cs",
+              "RelativeToolTip": "GO_Graph\\GO_GraphPanel.cs",
+              "ViewState": "AQIAANcAAAAAAAAAAAAMwOAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T15:48:03.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GO_GraphContextMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_Graph\\GO_GraphContextMenu.cs",
+              "RelativeDocumentMoniker": "GO_Graph\\GO_GraphContextMenu.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_Graph\\GO_GraphContextMenu.cs",
+              "RelativeToolTip": "GO_Graph\\GO_GraphContextMenu.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAApwFMAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T14:49:55.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GO_GraphNode.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_Graph\\GO_GraphNode.cs",
+              "RelativeDocumentMoniker": "GO_Graph\\GO_GraphNode.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_Graph\\GO_GraphNode.cs",
+              "RelativeToolTip": "GO_Graph\\GO_GraphNode.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAmwDAAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T10:47:36.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GO_GraphEdge.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_Graph\\GO_GraphEdge.cs",
+              "RelativeDocumentMoniker": "GO_Graph\\GO_GraphEdge.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\GO_Graph\\GO_GraphEdge.cs",
+              "RelativeToolTip": "GO_Graph\\GO_GraphEdge.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAgwGkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T18:06:19.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VisualisationState.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\VisualisationState.cs",
+              "RelativeDocumentMoniker": "VisualisationState.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\VisualisationState.cs",
+              "RelativeToolTip": "VisualisationState.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T15:31:49.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Graph_Graph.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Graph\\Graph_Graph.cs",
+              "RelativeDocumentMoniker": "Graph\\Graph_Graph.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Graph\\Graph_Graph.cs",
+              "RelativeToolTip": "Graph\\Graph_Graph.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAhwHQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T15:30:11.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Graph_UserGraph.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Graph\\Graph_UserGraph.cs",
+              "RelativeDocumentMoniker": "Graph\\Graph_UserGraph.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Graph\\Graph_UserGraph.cs",
+              "RelativeToolTip": "Graph\\Graph_UserGraph.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAmwFoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T13:43:42.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Graph_Node.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Graph\\Graph_Node.cs",
+              "RelativeDocumentMoniker": "Graph\\Graph_Node.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Graph\\Graph_Node.cs",
+              "RelativeToolTip": "Graph\\Graph_Node.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T15:30:12.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Graph_Edge.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Graph\\Graph_Edge.cs",
+              "RelativeDocumentMoniker": "Graph\\Graph_Edge.cs",
+              "ToolTip": "C:\\Users\\Thomas Wopling\\Desktop\\Laptop Share - OneDrive\\OneDrive\\Desktop\\CE301\\23-24_CE301_wopling_thomas\\Godot Proj\\Graph\\Graph_Edge.cs",
+              "RelativeToolTip": "Graph\\Graph_Edge.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAQwDsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T15:30:13.326Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

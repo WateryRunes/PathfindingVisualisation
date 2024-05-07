@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c75r1h1xsmvs6"]
+
+[ext_resource type="Script" path="res://GO_TokenVisualiser.cs" id="1_mdf5y"]
+
+[node name="TokenVisualiser" type="Node2D"]
+z_index = 5
+script = ExtResource("1_mdf5y")

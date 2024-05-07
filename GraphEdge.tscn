@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnqm8xg022fnu"]
+
+[ext_resource type="Script" path="res://GO_Graph/GO_GraphEdge.cs" id="1_dtf2f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bvc20"]
+
+[node name="GraphEdge" type="Node2D"]
+z_index = 1
+script = ExtResource("1_dtf2f")
+
+[node name="EdgeCollisionArea" type="Area2D" parent="."]
+
+[node name="EdgeCollision" type="CollisionShape2D" parent="EdgeCollisionArea"]
+shape = SubResource("RectangleShape2D_bvc20")
+
+[node name="WeightLabel" type="Label" parent="."]
+offset_right = 12.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "1"
+max_lines_visible = 1
+
+[connection signal="input_event" from="EdgeCollisionArea" to="." method="_on_edge_collision_area_input_event"]
+[connection signal="mouse_entered" from="EdgeCollisionArea" to="." method="_on_edge_collision_area_mouse_entered"]
+[connection signal="mouse_exited" from="EdgeCollisionArea" to="." method="_on_edge_collision_area_mouse_exited"]
